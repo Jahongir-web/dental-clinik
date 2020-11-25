@@ -1,0 +1,30 @@
+.toggler-btn {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../img/gamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.site-header-open .toggler-btn {
+  background-image: url(../img/close.svg);
+}
+
+
+@include breakpoint-down (860) {
+  .toggler-btn {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+
+  .nojs .toggler-btn {
+    display: none;
+  }
+}
