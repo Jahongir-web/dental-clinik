@@ -5,3 +5,9 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@include breakpoint-down (860) {
+  .container {
+    padding: 0;
+  }
+}

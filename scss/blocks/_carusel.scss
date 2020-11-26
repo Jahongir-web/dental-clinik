@@ -149,12 +149,14 @@
   }
   .carusel__slider-buttons-box {
     top: 55%;
+    left: 15px;
   }
 }
 
 @include breakpoint-down (600) {
   .carusel__item-heading {
     font-size: 30px;
+    line-height: 35px;
     max-width: 333px;
     margin-left: auto;
     margin-right: auto;
@@ -164,11 +166,13 @@
     width: 26px;
     height: 44px;
     margin-right: 5px;
+    background-size: 17px 37px;
   }
 
   .carusel__slider-btn--right {
     width: 44px;
     height: 44px;
+    background-size: 37px 37px;
   }
 }
 

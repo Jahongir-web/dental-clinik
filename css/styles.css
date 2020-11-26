@@ -428,6 +428,12 @@ img {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 860px) {
+  .container {
+    padding: 0;
+  }
+}
+
 .toggler-btn {
   display: none;
   width: 25px;
@@ -948,12 +954,14 @@ img {
   }
   .carusel__slider-buttons-box {
     top: 55%;
+    left: 15px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .carusel__item-heading {
     font-size: 30px;
+    line-height: 35px;
     max-width: 333px;
     margin-left: auto;
     margin-right: auto;
@@ -962,10 +970,12 @@ img {
     width: 26px;
     height: 44px;
     margin-right: 5px;
+    background-size: 17px 37px;
   }
   .carusel__slider-btn--right {
     width: 44px;
     height: 44px;
+    background-size: 37px 37px;
   }
 }
 
@@ -984,6 +994,235 @@ img {
 @media only screen and (max-width: 390px) {
   .carusel__slider-buttons-box {
     top: 35%;
+  }
+}
+
+.appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 88px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -79px;
+}
+
+.appointment__list {
+  max-width: 600px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appointment__item {
+  max-width: 300px;
+  width: 100%;
+  max-height: 300px;
+  background-color: #FFD600;
+  border-radius: 5px;
+}
+
+.appointment__item::before {
+  display: block;
+  width: 87px;
+  height: 87px;
+  content: "";
+  background-image: url("../img/tish.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 87px 87px;
+  margin: 39px auto 19px auto;
+}
+
+.appointment__item:nth-child(2) {
+  background-color: #FFE040;
+}
+
+.appointment__item:nth-child(2)::before {
+  background-image: url("../img/protez.png");
+}
+
+.appointment__text-top {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.appointment__text-bottom {
+  max-width: 227px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #272727;
+}
+
+.appointment__form {
+  max-width: 540px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0055B8;
+  color: #ffffff;
+  padding: 25px 34px 19px 34px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.appointment__heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+
+.appointment__input {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  margin-bottom: 12px;
+  padding: 20px 14px;
+  border-radius: 5px;
+}
+
+.appointment__input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.appointment__input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.appointment__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.appointment__input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.appointment__input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.appointment__button {
+  max-width: 230px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  display: inline-block;
+  padding: 17px 63px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFD600;
+  margin-bottom: 22px;
+}
+
+.appointment__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appointment__checkbox-label-text {
+  display: inline-block;
+  width: 256px;
+  margin-right: 15px;
+}
+
+.appointment__checkbox:checked ~ .appointment__checkbox-span {
+  background-image: url("../img/symbol-agree.svg");
+}
+
+.appointment__checkbox-span {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .appointment__item {
+    padding: 0 32px;
+  }
+  .appointment__text-bottom {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .appointment {
+    margin-top: 0;
+  }
+  .appointment__list {
+    display: none;
+  }
+  .appointment__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .appointment__item::before {
+    background-image: url("../img/tish@2x.png");
+  }
+  .appointment__item:nth-child(2)::before {
+    background-image: url("../img/protez@2x.png");
   }
 }
 /*# sourceMappingURL=styles.css.map */
