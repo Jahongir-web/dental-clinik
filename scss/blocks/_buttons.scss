@@ -11,6 +11,15 @@
   cursor: pointer;
 }
 
+.btn {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .site-header-open .toggler-btn {
   background-image: url(../img/close.svg);
 }
