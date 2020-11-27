@@ -1,0 +1,79 @@
+.location {
+  background-image: url("../img/bg-services.png");
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: auto;
+  margin-bottom: 70px;
+}
+
+.location__box {
+
+}
+
+.location__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+  text-align: center;
+  margin-bottom: 11px;
+  &::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: $sariq;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.location__text {
+  padding: 0 37px;
+  margin: 0;
+  max-width: 950px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+  margin-bottom: 37px;
+}
+
+.location__map {
+  padding: 150px 0;
+  background-image: url("../img/karta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px 760px;
+}
+
+@include retina-bg {
+  .location__map {
+    background-image: url("../img/karta@2x.png");
+  }
+
+}
+
+@include breakpoint-down (768) {
+
+  .location {
+    margin-top: 480px;
+    position: relative;
+  }
+
+  .location__form {
+    position: absolute;
+    top: -430px;
+  }
+
+  .location__map {
+    background-size: cover;
+  }
+}
