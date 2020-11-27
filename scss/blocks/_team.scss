@@ -94,6 +94,8 @@
   top: calc(50% - 60px);
 }
 
-.services__slider-btn {
-
+@include breakpoint-down (860) {
+  .services__slider-btn {
+    display: none;
+  }
 }

@@ -96,12 +96,15 @@
 }
 
 .carusel__btn {
+  max-width: 265px;
+  width: 100%;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 24px 115px;
+  padding: 24px 0px;
+  text-align: center;
   background-color: $moviy;
   text-decoration: none;
   vertical-align: baseline;
