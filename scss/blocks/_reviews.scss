@@ -1,4 +1,4 @@
-.team {
+.reviews {
   background-image: url("../img/bg-services.png");
   background-repeat: no-repeat;
   background-position: center 20px;
@@ -6,7 +6,7 @@
   margin-bottom: 70px;
 }
 
-.team__heading {
+.reviews__heading {
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -27,10 +27,11 @@
   }
 }
 
-.team__text {
+.reviews__text {
   padding: 0 37px;
   margin: 0;
-  max-width: 950px;
+  max-width: 538px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-weight: 300;
@@ -41,33 +42,27 @@
   margin-bottom: 37px;
 }
 
-.team__slider {
-  position: relative;
-  padding-right: 68px;
-}
-
-.team__list {
+.reviews__list {
   @include reset-list;
   display: flex;
-  padding: 0px 67px;
   overflow-x: hidden;
-
+  margin-bottom: 49px;
 }
 
-.team__item {
-  max-width: 300px;
+.reviews__item {
+  max-width: 354px;
   width: 100%;
-  margin-right: 52px;
+  margin-right: 39px;
   flex-shrink: 0;
   border-radius: 5px;
   flex-shrink: 0;
 }
 
-.team__item-img {
-  margin-bottom: 15px;
+.reviews__item-img {
+
 }
 
-.team__item-name {
+.reviews__item-name {
   padding: 0;
   margin: 0;
   font-weight: 500;
@@ -77,7 +72,7 @@
   margin-bottom: 5px;
 }
 
-.team__item-job {
+.reviews__item-text {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
@@ -86,24 +81,41 @@
   color: #000000;
 }
 
-.team__slider-box {
-  display: flex;
-  justify-content: space-between;
+
+.revievs__link {
+  max-width: 265px;
   width: 100%;
-  position: absolute;
-  top: calc(50% - 60px);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4D4D4D;
+  padding: 25px 75px;
+  text-decoration: none;
+  border: 2px solid $moviy;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: $moviy;
+    color: $bgcolor;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @include retina-bg {
-  .team {
+  .reviews {
     background-image: url("../img/bg-services@2x.png");
     background-size: 275px auto;
-
   }
 }
 
 @include breakpoint-down (860) {
-  .services__slider-btn {
-    display: none;
+  .reviews__list {
+    padding: 0 34px;
   }
 }
