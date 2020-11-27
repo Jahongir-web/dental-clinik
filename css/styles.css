@@ -1225,4 +1225,204 @@ img {
     background-image: url("../img/protez@2x.png");
   }
 }
+
+.services {
+  background-image: url("../img/bg-services.png");
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: auto;
+}
+
+.services__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.services__heading::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #FFD600;
+  margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services__text {
+  padding: 0 37px;
+  margin: 0;
+  max-width: 744px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.services__slider {
+  position: relative;
+  padding-right: 68px;
+}
+
+.services__slider-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 25px);
+}
+
+.services__slider-btn {
+  width: 42px;
+  height: 49px;
+  border: 2px solid #0055B8;
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url("../img/slider-left-btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px 34px;
+}
+
+.services__slider-btn:nth-child(2) {
+  background-image: url("../img/slider-right-btn.svg");
+}
+
+.services__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 67px;
+  overflow-x: hidden;
+}
+
+.services__item {
+  max-width: 200px;
+  width: 100%;
+  margin-right: 35px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 24px 0 28px 0;
+  -webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.services__item::before {
+  width: 77px;
+  height: 68px;
+  display: block;
+  content: "";
+  background-image: url("../img/dental.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+}
+
+.services__item:nth-child(2)::before {
+  background-image: url("../img/gigiena.png");
+}
+
+.services__item:nth-child(3)::before {
+  background-image: url("../img/diagnostica.png");
+}
+
+.services__item:nth-child(4)::before {
+  background-image: url("../img/children.png");
+}
+
+.services__item:nth-child(5)::before {
+  background-image: none;
+}
+
+.services__item-name {
+  width: 79px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #272727;
+}
+
+.services__item-hr {
+  width: 25px;
+  height: 2px;
+  background-color: #0055B8;
+  margin-bottom: 13px;
+}
+
+.services__item-old-prise {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 3px;
+}
+
+.services__item-new-price {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0A60C3;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .services__item::before {
+    background-image: url("../img/dental@2x.png");
+    background-size: contain;
+  }
+  .services__item:nth-child(2)::before {
+    background-image: url("../img/gigiena@2x.png");
+  }
+  .services__item:nth-child(3)::before {
+    background-image: url("../img/diagnostica@2x.png");
+  }
+  .services__item:nth-child(4)::before {
+    background-image: url("../img/children@2x.png");
+  }
+  .services__item:nth-child(5)::before {
+    background-image: none;
+  }
+  .services {
+    background-image: url("../img/bg-services@2x.png");
+    background-size: 275px auto;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .services__slider-box {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
